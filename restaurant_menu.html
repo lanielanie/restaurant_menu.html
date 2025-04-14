@@ -1,0 +1,219 @@
+<!--DOCTYPE HTML-->
+<html lang="es">
+    <head>
+        <title>Oceana Café</title>
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Quicksand'; 
+                background-color: #eafeff; 
+                color: #00554a; 
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                text-align: center;
+            }
+            
+            header {
+                background-color: #ffffff; /* the logo is green so white for the background*/
+                color: #0ca184; 
+                padding: 20px 0;
+                text-align: center; 
+            }
+
+            header img {
+                width: 500px;
+                height: auto;
+            }
+            
+           nav ul {
+                list-style: none;
+                padding: 0;
+                margin-top: 20px;
+           }
+
+           nav ul li {
+                display: inline;  /* i wanted the menu and place you order to be in the same line*/
+                margin-right: 10px;
+           }
+
+           nav ul li a {
+                color:#0ca184;
+           }
+
+
+           #menu-section {
+                padding: 40px 20px;
+                text-align: center;
+           }
+
+            #menu-section h2 {
+                color:#0ca184;
+                font-size: 3rem;
+        }
+            
+            article {
+                margin-bottom: 20px;
+                display: inline-block;  /* and the menu items in the same line*/
+                width: 30%;
+            }
+            
+            #place-your-order-section {
+                padding: 40 20px;
+                width: 30%;
+                margin: auto;
+                text-align: center;
+            }
+
+            #place-your-order-section h2 {
+                color:#0ca184;
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            form {
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* this is a little shadow to make it look like a card*/
+                margin: 0 auto;
+            }
+
+            label {
+                font-size: 1.1rem;
+                margin: 10px 0;
+                display: block;
+                font-weight: bold;
+                color: #34495e;
+            }
+
+            input[type="text"], input[type="email"], input[type="number"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 1rem;
+            }
+
+            input[type="submit"] {
+                background-color: #1abc9c;  /* the submit botton have to stand out*/
+                color: #fff;
+                padding: 15px 30px;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 5px;
+            }
+
+            input[type="radio"] {
+                margin: 10px;
+            }
+
+          </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img id="header-img" width="1024" height="398" src="oceana cafe logo.png" alt="Oceana Café Logo"/>
+                <br><br>
+                <h1>Oceana Café</h1> <!-- name of the restaurant, is a mermaid theme restaurant! -->
+                <nav>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order-form">Place your order</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <br>
+        <main>
+         <div>
+            <p><i>Welcom merfolks!</i></p> <!-- a little welcome message -->
+            <section id="menu-section">
+                <h2>Menu</h2>
+                <article>
+                    <figure> <!--I draw all the items -->
+                        <img width="256" src="seashel macaroons.png" alt="Seashell Macarons"/> <!--this is the first item -->
+                        <figcaption>🧜‍♀️<i>Dulce como canto de sirena sabor a fresa</i>🍓</figcaption>
+                    </figure>
+                    <br>
+                    <h3>Seashell Macarons</h3>
+                    <br>
+                    <p>Galleta sabor a fresa con relleno de vainilla,<br> un capricho con sabor a verano</p>
+                    <br>
+                    <p><b>Precio: <i>$7.00</i></b></p>
+                </article>
+                <article>
+                    <figure>
+                        <img width="256" src="segundo item.png" alt="Chocolate Snail"/> <!-- this is the second item -->
+                        <figcaption>🐚<i>Un dulce tesoro del fondo del mar🍫</i></figcaption>
+                    </figure>
+                    <br>
+                    <h3>Chocolate Snail</h3>
+                    <br>
+                    <p>Hojaldre dorado en espiral,<br> relleno con un corazón de chocolate fundido</p>
+                    <br>
+                    <p><b>Precio: <i>$4.50</i></b></p>
+                </article>
+                <article>
+                    <figure>
+                        <img width="256" src="cool drink.png" alt="cool drink"/> <!-- this is the third item -->
+                        <figcaption>🌊<i>Beso del océano en cada sorbo🍋</i></figcaption>
+                    </figure>
+                    <br>
+                    <h3>Blue Tide Elixir</h3>
+                    <br>
+                    <p>Disfruta la mezcla de limón y arándanos,<br> un sorbo de magia marina en cada trago,<br> ¡Sorbete de papel, 0 plástico!</p>
+                    <br>
+                    <p><b>Precio: <i>$6.80</i></b></p>
+                </article>
+            </section>
+         </div>
+         <div>
+            <br><br><br>
+            <section id="place-your-order-section">
+                <h2>Place you order</h2>
+                <form>
+                    <label for="name">🧜‍♀️Cómo te llaman en la superficie:🧜‍♀️</label> <!--I want to have like a mermaid theme for the form*-->
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">📧Tu correo de los mares:📧</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="pedido">📝Tu antojo oceánico aqui:📝</label>
+                    <br>
+                    <label for="macarons">🍓Seashell Macarons🐚</label>
+                    <input type="number" id="macarons" name="macarons" min="0" max="12" value="0" step="1" required>
+                    <br>
+                    <label for="snail">🐌Chocolate Snail🍫</label>
+                    <input type="number" id="snail" name="snail" min="0" max="12" value="0" step="1" required>
+                    <br>
+                    <label for="elixir">🌊Blue Tide Elixir🍋</label>
+                    <input type="number" id="elixir" name="elixir" min="0" max="12" value="0" step="1" required>
+                    <br><br>
+                    <label for="side-ons">¿Cuál de los siguientes toques mágicos deseas agregar?</label> 
+                    <br>
+                    <input type="radio" name="option">🧜Mer-Sirope
+                    <input type="radio" name="option">🌊 Sugar Pearls
+                    <input type="radio" name="option">✨ Star Powder
+                    <br><br>
+                    <textarea id="data-entry" name="data-entry" rows="4" cols="40" placeholder="Messege in a bottle🍾"></textarea>
+                    <br><br>
+                    <input type="submit" value="Go to checkout">
+                </form>
+            </section>
+         </div>
+        </main>
+        <div>
+            <br>
+            <footer>
+                <p><b>Made with love by</b> <i>@Lanie5</i></p>
+            </footer>
+        </div>
+    </body>
+</html>
+
